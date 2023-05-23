@@ -14,6 +14,13 @@
             else
             {
                 Console.WriteLine("Employee is Absent");
+
+                int wagePerHour = 20;
+                int fullDayHours = 8;
+
+                int dailyWage = wagePerHour * fullDayHours;
+
+                Console.WriteLine("Daily Employee Wage: $" + dailyWage);
             }
         }
     }
