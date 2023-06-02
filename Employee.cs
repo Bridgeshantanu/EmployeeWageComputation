@@ -14,11 +14,12 @@ namespace EmployeeWageComputation
         public static int workingDaysPerMonth = 20;
         public static int workingHoursLimit = 100;
         public static int workingDaysLimit = 20;
-        public static void Main(string[] args)
+
+       
+        public void Checkattendance()
         {
             Random random = new Random();
             int attendance = random.Next(2);
-
             if (attendance == 1)
             {
                 Console.WriteLine("Employee is absent");
@@ -31,7 +32,6 @@ namespace EmployeeWageComputation
                 CalculateMonthlyWage();
                 CalculateTotalWage();
             }
-;
         }
         public static void CalculateDailyWage()
         {
@@ -91,7 +91,8 @@ namespace EmployeeWageComputation
 
             }
             Console.WriteLine("Total Monthly Employee Wage: $" + totalWage);
-
         }
+        
+            
     }
 }
